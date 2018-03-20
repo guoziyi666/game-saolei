@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>扫雷</title>
+	<style>
+		button{
+			width: 30px;
+			height: 30px;
+			background: #CCC;
+			border: 3px outset #fff;
+			outline: none;
+			float: left;
+		}
+		.safe,.danger{
+			width: 30px;
+			height: 30px;
+			background: #ccc;
+			border: 3px inset #ccc;
+			outline: none;
+			line-height: 30px;
+			text-align: center;
+		}
+		.danger{
+			background: url(blood.bmp);
+		}
+		.wrapper{
+			float: left;
+			width: 990px;
+			height: 660px;
+			border:5px inset #ccc;
+		}
+		.content{
+			padding: 70px 100px 70px 70px;
+			background: #ababab;
+			width: 1300px;
+			margin: 0 auto;
+			border-radius: 30px;
+			border:8px outset #ccc;
+			overflow: hidden;
+		}
+		.scoreboard{
+			margin-top: 60px;
+			display: inline-block;
+			margin-left: 25px;
+  			width: 265px;
+			height: 200px;
+			border: 5px inset #ccc;
+			font-size: 19px;
+			color: #666;
+			font-weight: 900;
+		}
+		.num{
+			margin-top: 30px;
+			display: inline-block;
+			margin-left: 25px;
+			width: 265px;
+			height: 40px;
+			line-height: 40px;
+			text-align: center;
+			color: red;
+			font-weight: 900;
+			font-size: 18px;
+			border: 5px inset #ccc;
+		}
+		.start{
+			margin-top: 50px;
+			display: inline-block;
+			margin-left: 120px;
+			width: 65px;
+			height: 40px;
+			line-height: 40px;
+			text-align: center;
+			font-weight: 900;
+			font-size: 18px;
+			border: 5px outset #ccc;
+		}
+	</style>
+</head>
+<body>
+	<div class="content">
+		<div class="wrapper" id="wrapper">
+		</div>
+		<div class="scoreboard">
+			胜利条件：你需要在不点错雷的情况下尽可能快的将所有的非雷都点出来，如果你点错，就得重新开始<br>
+			如何操作：左键翻开这一格，右键标记地雷<br>
+			提示:为了达到娱乐效果，已将答案公布
+
+		</div>
+			<div class='start' id="START">开始</div>
+			<div class='num' id="Num">炸弹数：99</div>
+	</div>
+	
+	
+
+	<script src='扫雷.js'></script>
+</body>
+</html>
